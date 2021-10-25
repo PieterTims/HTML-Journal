@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Pieter Timothy - WebDev learning</title>
+</head>
+<body>
+    <center>
+    <h1>Pieter Timothy</h1>
+    <h2>A look on progress</h2>
+    <h4>Journal on my journey learning Web Development</h4>
+    </center>
+    <hr>
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#Chapter1">Chapter 1 - lessons in HTML</a></li>
+    </ol>
+    <hr>
+    <h3 id="Chapter1">Chapter 1 - lessons in HTML</h3>
+    <p><h1>This is heading 1</h1> <h6>and this is heading 6</h6></p>
+    <p>&lt;br&gt; can be used to do a line <br> break. While &lt;hr&gt; can be used to
+    add a horizontal line. <hr style="width: 50%;color: black;size:5px;margin-left: 0;">
+    &lt;br&gt; and &lt;hr&gt; can be further defined by doing &lt;br/hr style="(add style here)"&gt;.
+    &lt;p&gt; is used to make new paragraphs.
+    &lt;em&gt; is used to <em>emphasize</em> a part of the text. It is highly
+    advised to use this instead on &lt;i&gt;. Same advise goes for &lt;strong&gt;
+    to <strong>bold</strong> a part of a text (&lt;b&gt; being the alternative to it).
+    I assume that this is because it is much easier to style it later using CSS.
+        <ul>
+            <li>use &lt;ul&gt; to make unordered list</li>
+            <li>and &lt;li&gt; to populate it</li>
+            <li>to make an ordered list use &lt;ol&gt;</li>
+                <ol>
+                    <li>This also uses &lt;li&gt; to populate it.</li>
+                    <li>As shown, you can nest this inside an unordered list, 
+                        <ul>
+                            <li> with the opposite being possible too.</li>
+                        </ul>
+                    </li>
+                    <li>Ordered list comes with different types:
+                        <ol type="A"> <li>Capitalized alphabets</li> </ol>
+                        <ol type="a"> <li>small alphabets</li> </ol>
+                        <ol type="I"> <li>Capitalized roman numerals</li> </ol>
+                        <ol type="i"> <li>small roman numerals</li> </ol>
+                    </li>
+                    <li> Ordered list can also start from any number and can be reversed.
+                        <ol start="2" reversed> <li>This</li> <li>is</li> <li>an</li> <li>example</li></ol>
+                    </li>
+                </ol>
+        </ul>
+    In the table of contents part of the page, there are links that, when clicked brings users
+    to a different part of the page. this is done by using the &lt;a&gt; tag, then using an
+    attribute called <strong>href</strong> to link to a different part of a page that has been named 
+    using <strong>id</strong> attribute. <strong>href</strong> is usually used to hyperlink to 
+    <a href="http://www.simplehtmlguide.com/cheatsheet.php" target="_blank">HTTP-based URLs</a>, and other URL schemes supported by browsers, like 
+    <a href="assets/stranger-1.jpg" alt="Photo of a stranger">images</a>, 
+    <a href="mailto:pietertimothy10@gmail.com"> emails</a>, 
+    and <a href="tel:+6281311546815">telephones</a>.
+    </p>
+</body>
+</html>
