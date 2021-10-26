@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <title>Pieter Timothy - WebDev learning</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        
+        div.tableofcontents{
+            background-color: paleturquoise;
+        }
+        div.chapter1{
+            background-color: navajowhite;
+        }
+        div.chapter2{
+            background-color: burlywood;
+        }
+        hr{
+            border: .5px solid black;
+            margin: 0px;
+        }
+    </style>
 </head>
 <body>
     <center>
@@ -13,77 +32,126 @@
     <h4>Journal on my journey learning Web Development</h4>
     </center>
     <hr>
-    <h2>Table of Contents</h2>
-    <ol>
-        <li><a href="#Chapter1">Chapter 1 - lessons in HTML</a></li>
-    </ol>
-    <hr>
-    <h3 id="Chapter1">Chapter 1 - lessons in HTML</h3>
-    <p><h1>This is heading 1</h1> <h6>and this is heading 6</h6></p>
-    <p>&lt;br&gt; can be used to do a line <br> break. While &lt;hr&gt; can be used to
-    add a horizontal line. <hr style="width: 50%;color: black;margin-left: 0;">
-    &lt;br&gt; and &lt;hr&gt; can be further defined by doing &lt;br/hr style="(add style here)"&gt;.
-    &lt;p&gt; is used to make new paragraphs.
-    &lt;em&gt; is used to <em>emphasize</em> a part of the text. It is highly
-    advised to use this instead on &lt;i&gt;. Same advise goes for &lt;strong&gt;
-    to <strong>bold</strong> a part of a text (&lt;b&gt; being the alternative to it).
-    I assume that this is because it is much easier to style it later using CSS.
-        <ul>
-            <li>use &lt;ul&gt; to make unordered list</li>
-            <li>and &lt;li&gt; to populate it</li>
-            <li>to make an ordered list use &lt;ol&gt;</li>
-                <ol>
-                    <li>This also uses &lt;li&gt; to populate it.</li>
-                    <li>As shown, you can nest this inside an unordered list, 
-                        <ul>
-                            <li> with the opposite being possible too.</li>
-                        </ul>
-                    </li>
-                    <li>Ordered list comes with different types:
-                        <ol type="A"> <li>Capitalized alphabets</li> </ol>
-                        <ol type="a"> <li>small alphabets</li> </ol>
-                        <ol type="I"> <li>Capitalized roman numerals</li> </ol>
-                        <ol type="i"> <li>small roman numerals</li> </ol>
-                    </li>
-                    <li> Ordered list can also start from any number and can be reversed.
-                        <ol start="2" reversed> <li>This</li> <li>is</li> <li>an</li> <li>example</li></ol>
-                    </li>
-                </ol>
-        </ul>
-    In the table of contents part of the page, there are links that, when clicked brings users
-    to a different part of the page. this is done by using the &lt;a&gt; tag, then using an
-    attribute called <strong>href</strong> to link to a different part of a page that has been named 
-    using <strong>id</strong> attribute. <strong>href</strong> is usually used to hyperlink to 
-    <a href="http://www.simplehtmlguide.com/cheatsheet.php" target="_blank">HTTP-based URLs</a>, and other URL schemes supported by browsers, like 
-    <a href="assets/stranger-1.jpg" alt="Photo of a stranger">images</a>, 
-    <a href="mailto:pietertimothy10@gmail.com"> emails</a>, 
-    and <a href="tel:+6281311546815">telephones</a>.
-    </p>
+    <div class="tableofcontents">
+        <h2 style="margin-top: 0px;">Table of Contents</h2>
+        <ol>
+            <li><a href="#first_chapter">Chapter 1 - Lessons in HTML</a></li>
+            <li><a href="#second_chapter">Chapter 2 - Learning CSS</a></li>
+        </ol>    
+    </div>
+   
+    <div class="chapter1">
+        <h3 id="first_chapter">Chapter 1 - Lessons in HTML</h3>
+        <p><a href="http://www.simplehtmlguide.com/cheatsheet.php">HTML cheatsheet</a></p>
+        <p><h1>This is heading 1</h1> <h6>and this is heading 6</h6></p>
 
-    <p>
-        Tables are made using &lt;table&gt; to define the table:
-        <table cellspacing= 10>
-            <thead>
-                <th align= "left">Tag</th>
-                <th align= "left">Description</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>&lt;thead/tbody/tfooter&gt;</td>
-                    <td>defines three different groups of contents.</td>
-                </tr>
-                <tr>
-                    <td>&lt;tr&gt;</td>
-                    <td>defines table rows.</td>
-                </tr>
-                <tr>
-                    <td>&lt;th/td&gt;</td>
-                    <td>defines table cells, &lt;th&gt; creates header style cells.</td>
-                </tr>
-            </tbody>
-        </table>
-        There is also &lt;colgroup&gt; and &lt;col&gt;, which are used for formatting each
-        column in a table.
-    </p>
+        <p>
+        &lt;br&gt; can be used to do a line <br> break. While &lt;hr&gt; can be used to
+        add a horizontal line.<hr style="width: 50%;"></p>
+        &lt;br&gt; and &lt;hr&gt; can be further defined by doing &lt;br/hr style="
+        (add style here)"&gt;. &lt;p&gt; is used to make new paragraphs.
+        &lt;em&gt; is used to <em>emphasize</em> a part of the text. It is highly
+        advised to use this instead on &lt;i&gt;. Same advise goes for &lt;strong&gt;
+        to <strong>bold</strong> a part of a text (&lt;b&gt; being the alternative to it).
+        I assume that this is because it is much easier to style it later using CSS.
+        </p>
+
+        <p>
+            <ul>
+                <li>use &lt;ul&gt; to make unordered list</li>
+                <li>and &lt;li&gt; to populate it</li>
+                <li>to make an ordered list use &lt;ol&gt;</li>
+                    <ol>
+                        <li>This also uses &lt;li&gt; to populate it.</li>
+                        <li>As shown, you can nest this inside an unordered list, 
+                            <ul>
+                                <li> with the opposite being possible too.</li>
+                            </ul>
+                        </li>
+                        <li>Ordered list comes with different types:
+                            <ol type="A"> <li>Capitalized alphabets</li> </ol>
+                            <ol type="a"> <li>small alphabets</li> </ol>
+                            <ol type="I"> <li>Capitalized roman numerals</li> </ol>
+                            <ol type="i"> <li>small roman numerals</li> </ol>
+                        </li>
+                        <li> Ordered list can also start from any number and can be reversed.
+                            <ol start="2" reversed> 
+                                <li>This</li> <li>is</li> <li>an</li> <li>example</li>
+                            </ol>
+                        </li>
+                    </ol>
+            </ul>
+        </p>
+
+        <p>
+        In the table of contents part of the page, there are links that, when clicked brings 
+        users to a different part of the page. this is done by using the &lt;a&gt; tag, then 
+        using an attribute called <strong>href</strong> to link to a different part of a page 
+        that has been named using <strong>id</strong> attribute. <strong>href</strong> is 
+        usually used to hyperlink to 
+        <a href="http://www.simplehtmlguide.com/cheatsheet.php" target="_blank">HTTP-based URLs</a>, 
+        <a href="assets/stranger-1.jpg" alt="Photo of a stranger">images</a>, 
+        <a href="mailto:pietertimothy10@gmail.com"> emails</a>, 
+        and <a href="tel:+6281311546815">telephones</a>.
+        </p>
+
+        <p>
+            <table cellspacing= 5>
+                <thead>
+                    <th align= "left">Tag</th>
+                    <th align= "left">Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>to define a table</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;thead/tbody/tfooter&gt;</td>
+                        <td>defines three different groups of contents.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>defines table rows.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;th/td&gt;</td>
+                        <td>defines table cells, &lt;th&gt; creates header style cells.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;col/colgroup&gt;</td>
+                        <td>used for formatting each column in a table.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+    </div>
+
+    <div class="chapter2">
+        <h3 id="second_chapter">Chapter 2 - Learning CSS</h3>
+        <p><a href="https://htmlcheatsheet.com/css/">CSS cheatsheet</a></p>
+        <p>
+            Inline CSS applies style inside a tag by adding a style component inside the opening tag. Examples:
+            <ol>
+                <li style="background-color: blueviolet; margin: 10px;"> 
+                    <span style="color: white;">
+                        This one adds a bg color of blue violet and a margin of 10 pixels 
+                        on the list while a &lt;span&gt; tag applies the color white to the text.
+                    </span>
+                </li>
+                <li style="list-style-type: georgian; background-color: violet;margin-right: 100px;">
+                    <span>While this one changes the list-style-type to georgian with 
+                        a bg color of violet, with margin-right set to 100px.</span>
+                </li>
+            </ol>
+            <br>
+            Internal CSS applies style by using a &lt;style&gt; tag that resides in the 
+            &lt;head&gt; component. Each chapter resides in a &lt;div&gt; tag, and using
+            the &lt;style&gt; tag, I added different colors into each division. Internal CSS
+            applies to the whole page. <br>
+
+            
+        </p>
+    </div>
 </body>
 </html>
