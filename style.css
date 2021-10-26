@@ -2,3 +2,6 @@ body{
     background-color: burlywood;
     margin: 0;
 }
+hr{
+    border: .5px solid black;    
+}

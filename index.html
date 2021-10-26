@@ -21,7 +21,7 @@
     <h3 id="Chapter1">Chapter 1 - lessons in HTML</h3>
     <p><h1>This is heading 1</h1> <h6>and this is heading 6</h6></p>
     <p>&lt;br&gt; can be used to do a line <br> break. While &lt;hr&gt; can be used to
-    add a horizontal line. <hr style="width: 50%;color: black;size:5px;margin-left: 0;">
+    add a horizontal line. <hr style="width: 50%;color: black;margin-left: 0;">
     &lt;br&gt; and &lt;hr&gt; can be further defined by doing &lt;br/hr style="(add style here)"&gt;.
     &lt;p&gt; is used to make new paragraphs.
     &lt;em&gt; is used to <em>emphasize</em> a part of the text. It is highly
@@ -58,6 +58,32 @@
     <a href="assets/stranger-1.jpg" alt="Photo of a stranger">images</a>, 
     <a href="mailto:pietertimothy10@gmail.com"> emails</a>, 
     and <a href="tel:+6281311546815">telephones</a>.
+    </p>
+
+    <p>
+        Tables are made using &lt;table&gt; to define the table:
+        <table cellspacing= 10>
+            <thead>
+                <th align= "left">Tag</th>
+                <th align= "left">Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;thead/tbody/tfooter&gt;</td>
+                    <td>defines three different groups of contents.</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>defines table rows.</td>
+                </tr>
+                <tr>
+                    <td>&lt;th/td&gt;</td>
+                    <td>defines table cells, &lt;th&gt; creates header style cells.</td>
+                </tr>
+            </tbody>
+        </table>
+        There is also &lt;colgroup&gt; and &lt;col&gt;, which are used for formatting each
+        column in a table.
     </p>
 </body>
 </html>
