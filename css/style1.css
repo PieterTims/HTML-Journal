@@ -1,6 +1,10 @@
-a,
-a:visited,
-a:active {
+a{
+  color: blue;
+}
+a:visitied{
+  color: blue;
+}
+a:active{
   color: blue;
 }
 a:hover {
