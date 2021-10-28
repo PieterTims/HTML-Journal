@@ -1,152 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="style/css" href="/css/style1.css" />
     <title>Pieter Timothy - WebDev learning</title>
-    <style>
-        body{
-            margin: 0;
-            background-color: navajowhite;
-        }
-        div.chapter2{
-            background-color: burlywood;
-        }
-        hr{
-            border: .5px solid black;
-            margin: 0px;
-        }
-    </style>
-</head>
-<body>
+  </head>
+  <body>
     <center>
-    <h1>Pieter Timothy</h1>
-    <h2>A look on progress</h2>
-    <h4>Journal on my journey learning Web Development</h4>
+      <h1>Pieter Timothy</h1>
+      <h2>A look on progress</h2>
+      <h4>Journal on my journey learning Web Development</h4>
     </center>
-    <hr>
+    <hr />
     <div class="tableofcontents">
-        <h2 style="margin-top: 0px;">Table of Contents</h2>
-        <ol>
-            <li><a href="#first_chapter">Chapter 1 - Lessons in HTML</a></li>
-            <li><a href="#second_chapter">Chapter 2 - Learning CSS</a></li>
-        </ol>    
+      <h2 id="contents_table" class="chapterTitle">Table of Contents</h2>
+      <ol style="margin-block-end: 0em">
+        <li><a href="#first_chapter">Chapter 1 - Lessons in HTML</a></li>
+        <li><a href="#second_chapter">Chapter 2 - Learning CSS</a></li>
+      </ol>
     </div>
-   <hr>
+    <hr />
     <div class="chapter1">
-        <h3 id="first_chapter">Chapter 1 - Lessons in HTML</h3>
-        <p><a href="http://www.simplehtmlguide.com/cheatsheet.php"  target="_blank">HTML cheatsheet</a></p>
-        <p><h1>This is heading 1</h1> <h6>and this is heading 6</h6></p>
+      <h3 id="first_chapter" class="chapterTitle">
+        Chapter 1 - Lessons in HTML
+      </h3>
+      <p>
+        <a href="http://www.simplehtmlguide.com/cheatsheet.php" target="_blank"
+          >HTML cheatsheet</a
+        >
+      </p>
 
-        <p>
-        &lt;br&gt; can be used to do a line <br> break. While &lt;hr&gt; can be used to
-        add a horizontal line.<hr style="width: 50%;"></p>
-        &lt;br&gt; and &lt;hr&gt; can be further defined by doing &lt;br/hr style="
-        (add style here)"&gt;. &lt;p&gt; is used to make new paragraphs.
-        &lt;em&gt; is used to <em>emphasize</em> a part of the text. It is highly
-        advised to use this instead on &lt;i&gt;. Same advise goes for &lt;strong&gt;
-        to <strong>bold</strong> a part of a text (&lt;b&gt; being the alternative to it).
-        I assume that this is because it is much easier to style it later using CSS.
-        </p>
+      <h1>This is heading 1</h1>
+      <h6>and this is heading 6</h6>
 
-        <p>
+      <p>
+        &lt;br&gt; can be used to do a line <br />
+        break. While &lt;hr&gt; can be used to add a horizontal line.
+      </p>
+
+      <hr style="width: 50%" />
+
+      <p>
+        &lt;br&gt; and &lt;hr&gt; can be further defined by doing &lt;br/hr
+        style=" (add style here)"&gt;. &lt;p&gt; is used to make new paragraphs.
+        &lt;em&gt; is used to <em>emphasize</em> a part of the text. It is
+        highly advised to use this instead on &lt;i&gt;. Same advise goes for
+        &lt;strong&gt; to <strong>bold</strong> a part of a text (&lt;b&gt;
+        being the alternative to it). I assume that this is because it is much
+        easier to style it later using CSS.
+      </p>
+
+      <ul>
+        <li>use &lt;ul&gt; to make unordered list</li>
+        <li>and &lt;li&gt; to populate it</li>
+        <li>to make an ordered list use &lt;ol&gt;</li>
+        <ol>
+          <li>This also uses &lt;li&gt; to populate it.</li>
+          <li>
+            As shown, you can nest this inside an unordered list,
             <ul>
-                <li>use &lt;ul&gt; to make unordered list</li>
-                <li>and &lt;li&gt; to populate it</li>
-                <li>to make an ordered list use &lt;ol&gt;</li>
-                    <ol>
-                        <li>This also uses &lt;li&gt; to populate it.</li>
-                        <li>As shown, you can nest this inside an unordered list, 
-                            <ul>
-                                <li> with the opposite being possible too.</li>
-                            </ul>
-                        </li>
-                        <li>Ordered list comes with different types:
-                            <ol type="A"> <li>Capitalized alphabets</li> </ol>
-                            <ol type="a"> <li>small alphabets</li> </ol>
-                            <ol type="I"> <li>Capitalized roman numerals</li> </ol>
-                            <ol type="i"> <li>small roman numerals</li> </ol>
-                        </li>
-                        <li> Ordered list can also start from any number and can be reversed.
-                            <ol start="2" reversed> 
-                                <li>This</li> <li>is</li> <li>an</li> <li>example</li>
-                            </ol>
-                        </li>
-                    </ol>
+              <li>with the opposite being possible too.</li>
             </ul>
-        </p>
-
-        <p>
-        In the table of contents part of the page, there are links that, when clicked brings 
-        users to a different part of the page. this is done by using the &lt;a&gt; tag, then 
-        using an attribute called <strong>href</strong> to link to a different part of a page 
-        that has been named using <strong>id</strong> attribute. <strong>href</strong> is 
-        usually used to hyperlink to 
-        <a href="http://www.simplehtmlguide.com/cheatsheet.php" target="_blank">HTTP-based URLs</a>, 
-        <a href="assets/stranger-1.jpg" alt="Photo of a stranger">images</a>, 
-        <a href="mailto:pietertimothy10@gmail.com"> emails</a>, 
-        and <a href="tel:+6281311546815">telephones</a>.
-        </p>
-
-        <p>
-            <table cellspacing= 5>
-                <thead>
-                    <th align= "left">Tag</th>
-                    <th align= "left">Description</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>&lt;table&gt;</td>
-                        <td>to define a table</td>
-                    </tr>
-                    <tr>
-                        <td>&lt;thead/tbody/tfooter&gt;</td>
-                        <td>defines three different groups of contents.</td>
-                    </tr>
-                    <tr>
-                        <td>&lt;tr&gt;</td>
-                        <td>defines table rows.</td>
-                    </tr>
-                    <tr>
-                        <td>&lt;th/td&gt;</td>
-                        <td>defines table cells, &lt;th&gt; creates header style cells.</td>
-                    </tr>
-                    <tr>
-                        <td>&lt;col/colgroup&gt;</td>
-                        <td>used for formatting each column in a table.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </p>
-    </div>
-
-    <div class="chapter2">
-        <hr>
-        <h3 id="second_chapter">Chapter 2 - Learning CSS</h3>
-        <p><a href="https://htmlcheatsheet.com/css/" target="_blank">CSS cheatsheet</a></p>
-        <p>
-            Inline CSS applies style inside a tag by adding a style component inside the opening tag. Examples:
-            <ol>
-                <li style="background-color: blueviolet; margin: 10px;"> 
-                    <span style="color: white;">
-                        This one adds a bg color of blue violet and a margin of 10 pixels 
-                        on the list while a &lt;span&gt; tag applies the color white to the text.
-                    </span>
-                </li>
-                <li style="list-style-type: georgian; background-color: violet;margin-right: 100px;">
-                    <span>While this one changes the list-style-type to georgian with 
-                        a bg color of violet, with margin-right set to 100px.</span>
-                </li>
+          </li>
+          <li>
+            Ordered list comes with different types:
+            <ol type="A">
+              <li>Capitalized alphabets</li>
             </ol>
-            <br>
-            Internal CSS applies style by using a &lt;style&gt; tag that resides in the 
-            &lt;head&gt; component. Each chapter resides in a &lt;div&gt; tag, and using
-            the &lt;style&gt; tag, I added a different into chapter 2. Internal CSS
-            applies to the whole page/html file. <br>
+            <ol type="a">
+              <li>small alphabets</li>
+            </ol>
+            <ol type="I">
+              <li>Capitalized roman numerals</li>
+            </ol>
+            <ol type="i">
+              <li>small roman numerals</li>
+            </ol>
+          </li>
+          <li>
+            Ordered list can also start from any number and can be reversed.
+            <ol start="2" reversed>
+              <li>This</li>
+              <li>is</li>
+              <li>an</li>
+              <li>example</li>
+            </ol>
+          </li>
+        </ol>
+      </ul>
 
-            External CSS on the other hand can be implemented into multiple html files.
-        </p>
+      <p>
+        In the table of contents part of the page, there are links that, when
+        clicked brings users to a different part of the page. this is done by
+        using the &lt;a&gt; tag, then using an attribute called
+        <strong>href</strong> to link to a different part of a page that has
+        been named using <strong>id</strong> attribute. <strong>href</strong> is
+        usually used to hyperlink to
+        <a href="http://www.simplehtmlguide.com/cheatsheet.php" target="_blank">
+          HTTP-based URLs</a
+        >, <a href="assets/stranger-1.jpg" alt="Photo of a stranger">images</a>,
+        <a href="mailto:pietertimothy10@gmail.com"> emails</a>, and
+        <a href="tel:+6281311546815">telephones</a>.
+      </p>
+
+      <table cellspacing="5">
+        <thead>
+          <th align="left">Tag</th>
+          <th align="left">Description</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;table&gt;</td>
+            <td>to define a table</td>
+          </tr>
+          <tr>
+            <td>&lt;thead/tbody/tfooter&gt;</td>
+            <td>defines three different groups of contents.</td>
+          </tr>
+          <tr>
+            <td>&lt;tr&gt;</td>
+            <td>defines table rows.</td>
+          </tr>
+          <tr>
+            <td>&lt;th/td&gt;</td>
+            <td>defines table cells, &lt;th&gt; creates header style cells.</td>
+          </tr>
+          <tr>
+            <td>&lt;col/colgroup&gt;</td>
+            <td>used for formatting each column in a table.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-</body>
+    <hr />
+    <div class="chapter2">
+      <h3 id="second_chapter" class="chapterTitle">Chapter 2 - Learning CSS</h3>
+
+      <p>
+        <a href="https://htmlcheatsheet.com/css/" target="_blank">
+          CSS cheatsheet</a
+        >
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
+          target="_blank"
+          >CSS Properties Refererence</a
+        >
+      </p>
+
+      <p>
+        CSS syntax looks like this = selector{property:value;} , it is possible
+        to add multiple property:value (or rule) into one selector.
+      </p>
+
+      <ul>
+        <li>
+          <strong>selector</strong> is the "Who?" as in which tag is it pointing
+          towards
+        </li>
+        <li>
+          <strong>property</strong> is the "What?" as in what property needs to
+          be changed
+        </li>
+        <li>
+          <strong>value</strong> is the "How?" as in how do you want to change
+          the property.
+        </li>
+      </ul>
+
+      <p>
+        There is always a default css style that is applied to all tags, and
+        when we write a css code corresponding to that default, it will override
+        the default and use our code. The best practice to keep the multiple
+        rules organised is to keep it in alphabetical order, which will make it
+        easier to both read and debug.
+      </p>
+
+      <p>
+        There are other kinds of selectors as well, namely <u>class</u> and
+        <u>id</u> selectors. These can be used to differentiate similar tags so
+        that it is possible to have the same tag used for different things
+        having different set of rules (Example: &lt;img class="one"&gt; and
+        &lt;img class="two"&gt; can be styled by different selectors).
+      </p>
+
+      <p><strong>class & id selectors have higher priority</strong>.</p>
+
+      <p>
+        ids can be used only once in each file, i.e. only one id called apple or
+        only one id called carboard_box etc. , making it a super specific
+        instance. One tag can have multiple classes embedded but only one id.
+        CSS can be done in three different ways: Inline, Internal or External.
+      </p>
+      <p>
+        Inline CSS applies style inside a tag by adding a style component inside
+        the opening tag. Examples:
+      </p>
+      <ol>
+        <li style="background-color: blueviolet; margin: 10px">
+          <span style="color: white">
+            This one adds a bg color of blue violet and a margin of 10 pixels on
+            the list while a &lt;span&gt; tag applies the color white to the
+            text.
+          </span>
+        </li>
+        <li
+          style="
+            list-style-type: georgian;
+            background-color: violet;
+            margin-right: 100px;
+          "
+        >
+          <span>
+            While this one changes the list-style-type to georgian with a bg
+            color of violet, with margin-right set to 100px.
+          </span>
+        </li>
+      </ol>
+      <p>
+        Internal CSS applies style by using a &lt;style&gt; tag that resides in
+        the &lt;head&gt; component. Each chapter resides in a &lt;div&gt; tag,
+        and using the &lt;style&gt; tag, I added a different into chapter 2.
+        Internal CSS applies to the whole page/html file.
+      </p>
+      <p>
+        External CSS on the other hand can be implemented into multiple html
+        files. The way external CSS works, is the same as Internal CSS. You
+        create a CSS file the same way you make a html file. Then, you use
+        &lt;link&gt; to link that CSS file to a HTML file. External CSS is
+        usually recommended to implement all style to your whole website.
+      </p>
+      <p style="margin-block-end: 0em">
+        *<strong>Priorities for CSS = Inline > Internal > External.</strong>
+      </p>
+    </div>
+    <div></div>
+  </body>
 </html>

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  background-color: #f7e6bb;
+}
+div {
+  padding: 1em;
+}
+hr {
+  border: 0.5px solid black;
+  margin: 0px;
+}
+.tableofcontents {
+  background-color: #fbe6db;
+}
+.chapter1 {
+  background-color: #c9edf9;
+}
+.chapter2 {
+  background-color: #ffdede;
+}
+.chapterTitle {
+  margin-block-start: 0;
+}
