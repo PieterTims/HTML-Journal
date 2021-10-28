@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style1.css" />
+    <link rel="icon" href="assets/favicon.ico" />
     <title>Pieter Timothy - WebDev learning</title>
   </head>
   <body>
@@ -18,6 +19,9 @@
       <ol style="margin-block-end: 0em">
         <li><a href="#first_chapter">Chapter 1 - Lessons in HTML</a></li>
         <li><a href="#second_chapter">Chapter 2 - Learning CSS</a></li>
+        <li>
+          <a href="#third_chapter">Chapter 3 - Everything Else HTML & CSS</a>
+        </li>
       </ol>
     </div>
     <hr />
@@ -234,6 +238,69 @@
         *<strong>Priorities for CSS = Inline > Internal > External.</strong>
       </p>
     </div>
-    <div></div>
+    <hr />
+    <div class="chapter3">
+      <h3 id="third_chapter" class="chapterTitle">
+        Chapter 3 - Everything Else HTML and CSS
+      </h3>
+      <ul>
+        <li>
+          Use the chrome dev tools to debug and change the the css part of the
+          code easier. Right-clicking on a certain element and choosing inspect
+          brings up the code for that exact element.
+        </li>
+        <li>
+          Favicons can be linked using rel="icon", there usually more than one
+          resolution that needs to be saved for these favicons. Android, Chrome,
+          Opera and Apple all have their own size. favicons are used to make it
+          easier for users to identify which website they are in just from a
+          glance.
+        </li>
+        <li>
+          &lt;div&gt; is used to defined a division or section of an HTML. This
+          tag is a block-level organizing tool.
+        </li>
+        <li>
+          &lt;span&gt; is used as an inline container to style a part of a text
+          or document. This tag is an inline-level organizing tool.
+        </li>
+        <li>
+          each element of an HTML has a default CSS style that is implemented by
+          chrome. block-level elements have multiple display elements that can
+          be manipulated. <em>content</em> sits inside a <em>padding</em> which
+          sits inside a <em>border</em>, and there is a <em>margin</em> that sit
+          outside of the border. for easier context:
+          <p id="boxModelExample">This is its content.</p>
+          Here, the text inside has been set to 10pt, with padding 10pt, border
+          style: double with a width of 5 pt, and a margin of 1 inch.
+        </li>
+        <li>
+          Display is one of the default CSS styles written to the tags, this
+          specifies the display behavior of an element. There are 4 commonly
+          used display properties. Block, Inline, Inline-block, and None.
+          <ol>
+            <li>
+              Block is usually seen in &lt;p&gt; and &lt;h&gt;. This displays an
+              element as a block element.It starts on a new line, and takes up
+              the whole width
+            </li>
+            <li>
+              Inline is usually seen in &lt;span&gt;,&lt;a&gt; and &lt;img&gt;.
+              This displays an element as an inline element. Any height and
+              width properties will have no effect
+            </li>
+            <li>
+              Inline-block displays an element as an inline-level container, but
+              you can add height and width properties to it.
+            </li>
+            <li>
+              None just removes the element from displaying. There is a property
+              called visibility that can be added to an element to hide it while
+              still taking the space of the display it implements.
+            </li>
+          </ol>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
