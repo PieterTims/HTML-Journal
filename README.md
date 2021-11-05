@@ -5,9 +5,9 @@ This is a repo for my journal through learning web dev independently. It will be
 Done:
 - HTML5
 - CSS
+- Bootstrap 4 & 5 (General Understanding on Docs usage)
 
 In-Progress:
-- Bootstrap 4
 - JavaScript
 
 What's Next (not in order):
